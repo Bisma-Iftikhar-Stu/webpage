@@ -1,0 +1,251 @@
+body{
+    font-family: Arial, sans-serif;
+}
+.Nav{
+    width: 100%;
+    height: 40px;
+    background-color: #FAFAFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    
+}
+.Nav a{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #171717;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+@media screen and (max-width:576px){
+    .Nav a{font-size: 8px;
+    padding-left: 5px;
+    padding-right: 5px;}
+    
+}
+.banner{
+    width: 100%;
+    height: 600px;
+    background-color: gray;
+    background-image: url(assets/hehe.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    animation: slide 8s infinite 6s alternate ease-in-out ;
+    
+}
+@keyframes slide{
+    0%{
+        background-image: url(assets/hehe.webp);
+    }45%{
+        background-image: url(assets/banner.jpg);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+    }75%{
+        background-image: url(assets/bannerAlljerseys.webp);
+    }100%{
+        background-image: url(assets/hehe.webp);
+    }
+}
+.banner::before{
+
+    height:100%;
+    position: absolute;
+    /* inset: 0; */
+    background: rgba(225, 225, 225, 0.4);
+
+}
+.banner-content{
+    position: relative;
+    
+    padding-top: 20px;
+    margin-top: 250px;
+    max-width: 500px;
+}
+.subtitle{
+    color: #333;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.title{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+/*button*/
+.btn{
+    padding: 12px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background: #333;
+    color: white;
+
+}
+/*.heading{
+    justify-content: center;
+    align-items: center;
+}*/
+.heading h2{
+    
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.cards{
+    border: 1px solid rgb(237, 225, 225);
+    border-radius: 10px;
+    position: relative;
+    transition: 0.3s ease;
+    width: 250px;
+    height: 400px;
+}
+.cards a{text-decoration: none; color: #171717;}
+.cards a:hover{color: green;}
+.cards h6{
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.cards h5{
+    padding-top: 5px;
+    padding-left: 5px;
+    color: green;
+}
+.oldPrice{
+    color: #888;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+.sale{
+    width: 40px;
+    height: 20px;
+    background-color: brown;
+    position: absolute;
+    top: 10px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sale p{
+    color: white;
+    width: 30px;
+    padding-top: 10px;
+    margin-right: 6px;
+    
+}
+.img-container{
+    position: relative;
+    width: 100%;
+    height: 260px;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: opacity 0.4s ease-in-out;
+    position: absolute;
+    top: 0;
+
+}
+.img-hover{
+    opacity: 0;
+}
+.img-container:hover .img-hover{
+    opacity: 1;
+}
+.img-container:hover .img-default{
+    opacity: 0;
+}
+.heading2 h2{
+    
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+.img-container2{
+    position: relative;
+    width: 100%;
+    height: 260px;
+}
+
+.img-container2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: opacity 0.4s ease-in-out;
+    position: absolute;
+    top: 0;
+
+}
+.img-hover2{
+    opacity: 0;
+}
+.img-container2:hover .img-hover2{
+    opacity: 1;
+}
+.img-container2:hover .img-default2{
+    opacity: 0;
+}
+.myFooter h3{color: #FAFAFC;}
+.myFooter div a{
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+
+}
+.myFooter div{
+    display: flex;
+    flex-direction: column;
+}
+.myFooter{
+    height: max-content;
+    background-color: #333;
+}
+.copyright{
+    padding-top: 30px;
+    text-align: center;
+    color: #bebecb;
+}
+.arrow{
+    width: 40px;
+    height: 40px;
+    background-color: #888;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(270deg);
+}
+.arrow a{
+    color: black;
+    margin-bottom: 7px;
+    font-size: 40px;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
